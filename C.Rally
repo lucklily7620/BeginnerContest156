@@ -1,0 +1,12 @@
+//no submit
+
+n = int(input())
+x = [int(x) for x in input().split()]
+
+p = int(sum(x) // n)+1
+
+c = 0
+for i in range(0, n):
+    c += (x[i] - p) ** 2
+
+print(c)
